@@ -13,11 +13,11 @@ const SocialCards = () => {
 
   return (
     <section className="bg-white py-20 md:py-32 overflow-hidden selection:bg-purple-100 font-sans">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="max-w-7xl mx-auto px-6 md:pl-12 md:pr-20 lg:pr-40">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
           
           {/* LEFT COLUMN */}
-          <div className="flex flex-col space-y-6 max-w-xl z-50">
+          <div className="flex flex-col space-y-6 max-w-xl z-50 lg:-ml-12">
             {/* Instagram Handle Header */}
             <div className="flex items-center space-x-3 mb-2">
               <div className="w-10 h-10 relative">
@@ -85,7 +85,7 @@ const SocialCards = () => {
             <div className="relative w-full h-full flex items-center justify-end transition-transform duration-1000 -mt-20 lg:mt-0">
               
               {/* Card 4: READY TO STEP INTO (Top Right) */}
-              <div className="absolute top-[5%] right-[-5%] md:right-[-5%] lg:right-[-40%] w-[230px] md:w-[290px] aspect-[2/3] rounded-[40px] shadow-[0_40px_120px_rgba(0,0,0,0.45)] rotate-[-5deg] rotate-y-[10deg] rotate-x-[5deg] z-10 transition-all hover:scale-105 duration-500 overflow-hidden bg-zinc-950 flex flex-col">
+              <div className="absolute top-[5%] right-[5%] md:right-[-5%] lg:right-[-40%] w-[230px] md:w-[290px] aspect-[2/3] rounded-[40px] shadow-[0_40px_120px_rgba(0,0,0,0.45)] rotate-[-5deg] rotate-y-[10deg] rotate-x-[5deg] z-10 transition-all hover:scale-105 duration-500 overflow-hidden bg-zinc-950 flex flex-col">
                 {/* Header */}
                 <div className="p-4 flex items-center justify-between">
                   <div className="flex items-center space-x-2">
@@ -132,7 +132,7 @@ const SocialCards = () => {
               </div>
 
               {/* Card 3: Valentines (Upper Middle) */}
-              <div className="absolute top-[18%] right-[10%] md:right-[10%] lg:right-[-0%] w-[230px] md:w-[290px] aspect-[2/3] rounded-[40px] shadow-[0_50px_140px_rgba(0,0,0,0.55)] rotate-[10deg] rotate-y-[-20deg] rotate-x-[5deg] z-20 transition-all hover:scale-105 duration-500 overflow-hidden bg-white flex flex-col">
+              <div className="absolute top-[18%] right-[15%] md:right-[10%] lg:right-[-0%] w-[230px] md:w-[290px] aspect-[2/3] rounded-[40px] shadow-[0_50px_140px_rgba(0,0,0,0.55)] rotate-[10deg] rotate-y-[-20deg] rotate-x-[5deg] z-20 transition-all hover:scale-105 duration-500 overflow-hidden bg-white flex flex-col">
                 {/* Header */}
                 <div className="p-4 flex items-center justify-between">
                   <div className="flex items-center space-x-2">

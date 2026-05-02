@@ -14,13 +14,13 @@ const desktopCards = [
 ];
 
 const mobileCards = [
-  { id: 1, src: "/images/posters/poster1.avif", rotate: "-10deg", zIndex: 70, x: -100, y: -100 }, // Top Left
-  { id: 2, src: "/images/posters/poster2.avif", rotate: "2deg", zIndex: 60, x: 20, y: -160 },   // Top Middle
-  { id: 3, src: "/images/posters/poster3.avif", rotate: "8deg", zIndex: 50, x: 130, y: -40 },   // Top Right
+  { id: 1, src: "/images/posters/poster1.avif", rotate: "-10deg", zIndex: 70, x: -110, y: -120 }, // Top Left
+  { id: 2, src: "/images/posters/poster2.avif", rotate: "2deg", zIndex: 60, x: 20, y: -180 },   // Top Middle
+  { id: 3, src: "/images/posters/poster3.avif", rotate: "8deg", zIndex: 50, x: 140, y: -50 },   // Top Right
   { id: 4, src: "/images/posters/poster4.avif", rotate: "-2deg", zIndex: 80, x: 0, y: 0 },      // CENTER
-  { id: 5, src: "/images/posters/poster5.avif", rotate: "-8deg", zIndex: 30, x: -120, y: 80 },  // Left
-  { id: 6, src: "/images/posters/poster6.avif", rotate: "5deg", zIndex: 40, x: -10, y: 160 },   // Bottom
-  { id: 7, src: "/images/posters/poster7.avif", rotate: "12deg", zIndex: 20, x: 120, y: 130 },  // Bottom Right
+  { id: 5, src: "/images/posters/poster5.avif", rotate: "-8deg", zIndex: 30, x: -130, y: 90 },  // Left
+  { id: 6, src: "/images/posters/poster6.avif", rotate: "5deg", zIndex: 40, x: -10, y: 180 },   // Bottom
+  { id: 7, src: "/images/posters/poster7.avif", rotate: "12deg", zIndex: 20, x: 130, y: 150 },  // Bottom Right
 ];
 
 export default function LayeredCards() {
@@ -113,11 +113,11 @@ export default function LayeredCards() {
 
         {/* Layered Cards Section */}
         <div className="relative mt-12 md:mt-0 h-[600px] md:h-[800px] flex justify-center items-center w-full">
-          <div className="relative w-full flex justify-center items-center scale-[0.6] md:scale-90 lg:scale-100">
+          <div className="relative w-full flex justify-center items-center scale-[0.85] md:scale-90 lg:scale-100">
             {currentCards.map((card, index) => (
               <div
                 key={card.id}
-                className={`absolute w-44 md:w-72 h-[260px] md:h-[400px] rounded-[1.2rem] md:rounded-[2rem] shadow-2xl overflow-hidden transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] group`}
+                className={`absolute w-52 md:w-72 h-[320px] md:h-[400px] rounded-[1.2rem] md:rounded-[2rem] shadow-2xl overflow-hidden transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] group`}
                 style={{
                   transform: isFanned 
                     ? `translateX(${card.x}px) translateY(${card.y}px) rotate(${card.rotate})`
